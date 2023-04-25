@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plotlist</title>
+    <!-- Start Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Start Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Start Css File -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Start Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg position-fixed w-100">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/black-logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link" href="category.html">Category</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link" href="lidting.html">Listing</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <div class="main-button">
+                            <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-plus icon"></i>
+                                Add Your Listing
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Landding -->
+    <div class="landding text-center text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h6 class="text-uppercase">Over 36,500+ Active Listings</h6>
+                    <h2>Find Nearby Places & Things</h2>
+                </div>
+                <div class="col-lg-12">
+                    <form class="main-form">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-12 align-items-center">
+                                <fieldset>
+                                    <select name="area" id="area" class="form-select">
+                                        <option value="1" selected>AllAreas</option>
+                                        <option value="2">New Village</option>
+                                        <option value="3">Old Town</option>
+                                        <option value="4">Modren City</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <div class="loc">
+                                    <input type="adress" class="location" placeholder="Enter a location" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <select name="price" class="price form-select">
+                                    <option value="5" selected>Price Range</option>
+                                    <option value="6">$100-$250</option>
+                                    <option value="7">$250-$500</option>
+                                    <option value="8">$500-$1,000</option>
+                                    <option value="9">$1,000 or More</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <div class="submit position-relative">
+                                    <div
+                                        class="button position-absolute bg-white rounded-circle d-inline-block text-center">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <input type="submit" value="Search Now">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-10 offset-lg-1">
+                    <ul class="d-flex justify-content-around align-items-center flex-wrap px-5 w-100">
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <div class="image mx-auto">
+                                        <img src="img/search-icon-01.png" alt="search-icon-01">
+                                    </div>
+                                    <h6 class="mt-3">Apartments</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <div class="image mx-auto">
+                                        <img src="img/search-icon-02.png" alt="search-icon-02">
+                                    </div>
+                                    <h6 class="mt-3"> Food & Life</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <div class="image mx-auto">
+                                        <img src="img/search-icon-03.png" alt="search-icon-03">
+                                    </div>
+                                    <h6 class="mt-3"> Cars</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <div class="image mx-auto">
+                                        <img src="img/search-icon-04.png" alt="search-icon-04">
+                                    </div>
+                                    <h6 class="mt-3"> Shopping</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <div class="image mx-auto">
+                                        <img src="img/search-icon-05.png" alt="search-icon-05">
+                                    </div>
+                                    <h6 class="mt-3">Traveling</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Landding -->
+    <!-- Start Popular-Categories -->
+    <div class="popular-categories section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-title text-center mb-5">
+                        <h2>Popular Categories</h2>
+                        <h6 class="text-uppercase">Check Them Out</h6>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="main-popular overflow-hidden mt-5">
+                        <div class="row">
+                            <div class="col-lg-3 col-12">
+                                <ul class="d-flex flex-lg-column justify-content-between align-items-center w-100">
+                                    <li class="w-100 h-100 position-relative active text-center">
+                                        <a href="#">
+                                            <div class="icon position-absolute rounded-circle top-50 start-50">
+                                                <img src="img/search-icon-01.png" alt="search-icon-01">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="w-100 h-100 position-relative text-center">
+                                        <a href="#">
+                                            <div class="icon position-absolute rounded-circle top-50 start-50">
+                                                <img src="img/search-icon-02.png" alt="search-icon-02">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="w-100 h-100 position-relative text-center">
+                                        <a href="#">
+                                            <div class="icon position-absolute rounded-circle top-50 start-50">
+                                                <img src="img/search-icon-03.png" alt="search-icon-03">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="w-100 h-100 position-relative text-center">
+                                        <a href="#">
+                                            <div class="icon position-absolute rounded-circle top-50 start-50">
+                                                <img src="img/search-icon-04.png" alt="search-icon-04">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="w-100 h-100 position-relative text-center">
+                                        <a href="#">
+                                            <div class="icon position-absolute rounded-circle top-50 start-50">
+                                                <img src="img/search-icon-05.png" alt="search-icon-05">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-9 col-12">
+                                <div class="popular">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-12">
+                                            <div class="left-text text-white h-100">
+                                                <h4>One Of The Most Trending Stuffs Right Now!</h4>
+                                                <p>Plot Listing is a responsive Bootstrap 5 website template that
+                                                    included 4
+                                                    different HTML pages. This template is provided by TemplateMo
+                                                    website.
+                                                    You can apply this layout for your static or dynamic CMS websites.
+                                                </p>
+                                                <a href="#"
+                                                    class="w-lg-100 d-flex justify-content-center align-items-center mx-auto mx-lg-0">
+                                                    <i class="fa-solid fa-eye icon-eye fa-xs"></i>
+                                                    Discover More
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-12 p-0">
+                                            <div class="image">
+                                                <img src="img/tabs-image-01.jpg" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Popular-Categories -->
+    <!-- Start Listing -->
+    <div class="listing section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-title text-center mb-5">
+                        <h2>Recent Listing</h2>
+                        <h6 class="text-uppercase">Check Them Out</h6>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="carousels">
+                        <div id="first-row" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-12 mb-3">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-12 pe-0">
+                                                    <img src="img/listing-01.jpg" class="img-fluid main-img"
+                                                        alt="listing-01">
+                                                </div>
+                                                <div class="col-lg-6 col-12 ps-0">
+                                                    <div class="carousel-text w-100 h-100">
+                                                        <ul class="icons d-flex">
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li>(18) Reviews</li>
+                                                        </ul>
+                                                        <a href="#">
+                                                            <h4>1. First Apartment Unit</h4>
+                                                        </a>
+                                                        <h6>by: Sale Agent</h6>
+                                                        <span class="price d-flex align-items-center">
+                                                            <img src="img/price-img.png" alt="">
+                                                            $450 - $950 / month with taxes
+                                                        </span>
+                                                        <span class="details">
+                                                            Details: <em>2760 sq ft</em>
+                                                        </span>
+                                                        <ul class="info">
+                                                            <li>
+                                                                <img src="img/info-01.png" alt="">
+                                                                3 Bathrooms
+                                                            </li>
+                                                            <li>
+                                                                <img src="img/info-02.png" alt="">
+                                                                4 Bathrooms
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#" class="contact">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                            Contact Now
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 mb-3">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-12 pe-0">
+                                                    <img src="img/listing-02-08.jpg" class="img-fluid main-img"
+                                                        alt="listing-02-08">
+                                                </div>
+                                                <div class="col-lg-6 col-12 ps-0">
+                                                    <div class="carousel-text w-100 h-100">
+                                                        <ul class="icons d-flex">
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li>(24) Reviews</li>
+                                                        </ul>
+                                                        <a href="#">
+                                                            <h4>2. Another House of Gaming</h4>
+                                                        </a>
+                                                        <h6>by: Sale Agent</h6>
+                                                        <span class="price d-flex align-items-center">
+                                                            <img src="img/price-img.png" alt="">
+                                                            $1,400 - $3,500 / month with taxes
+                                                        </span>
+                                                        <span class="details">
+                                                            Details: <em>3650 sq ft</em>
+                                                        </span>
+                                                        <ul class="info">
+                                                            <li>
+                                                                <img src="img/info-01.png" alt="">
+                                                                4 Bathrooms
+                                                            </li>
+                                                            <li>
+                                                                <img src="img/info-02.png" alt="">
+                                                                3 Bathrooms
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#" class="contact">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                            Contact Now
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-12 pe-0">
+                                                    <img src="img/listing-03.jpg" class="img-fluid main-img"
+                                                        alt="listing-03">
+                                                </div>
+                                                <div class="col-lg-6 col-12 ps-0">
+                                                    <div class="carousel-text w-100 h-100">
+                                                        <ul class="icons d-flex">
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li>(36) Reviews</li>
+                                                        </ul>
+                                                        <a href="#">
+                                                            <h4>3. Secret Place Hidden House</h4>
+                                                        </a>
+                                                        <h6>by: Sale Agent</h6>
+                                                        <span class="price d-flex align-items-center">
+                                                            <img src="img/price-img.png" alt="">
+                                                            $1,500 - $3,600 / month with taxes
+                                                        </span>
+                                                        <span class="details">
+                                                            Details: <em>5500 sq ft</em>
+                                                        </span>
+                                                        <ul class="info">
+                                                            <li>
+                                                                <img src="img/info-01.png" alt="">
+                                                                4 Bathrooms
+                                                            </li>
+                                                            <li>
+                                                                <img src="img/info-02.png" alt="">
+                                                                3 Bathrooms
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#" class="contact">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                            Contact Now
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-12 mb-3">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-12 pe-0">
+                                                    <img src="img/listing-04.jpg" class="img-fluid main-img"
+                                                        alt="listing-04">
+                                                </div>
+                                                <div class="col-lg-6 col-12 ps-0">
+                                                    <div class="carousel-text w-100 h-100">
+                                                        <ul class="icons d-flex">
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li>(24) Reviews</li>
+                                                        </ul>
+                                                        <a href="#">
+                                                            <h4>4. Sunshine Fourth Apartment</h4>
+                                                        </a>
+                                                        <h6>by: Sale Agent</h6>
+                                                        <span class="price d-flex align-items-center">
+                                                            <img src="img/price-img.png" alt="">
+                                                            $3,600 / month with taxes
+                                                        </span>
+                                                        <span class="details">
+                                                            Details: <em>3660 sq ft</em>
+                                                        </span>
+                                                        <ul class="info">
+                                                            <li>
+                                                                <img src="img/info-01.png" alt="">
+                                                                5 Bathrooms
+                                                            </li>
+                                                            <li>
+                                                                <img src="img/info-02.png" alt="">
+                                                                3 Bathrooms
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#" class="contact">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                            Contact Now
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 mb-3">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-12 pe-0">
+                                                    <img src="img/listing-05-07.jpg" class="img-fluid main-img"
+                                                        alt="listing-05-07">
+                                                </div>
+                                                <div class="col-lg-6 col-12 ps-0">
+                                                    <div class="carousel-text w-100 h-100">
+                                                        <ul class="icons d-flex">
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li>(32) Reviews</li>
+                                                        </ul>
+                                                        <a href="#">
+                                                            <h4>5. Best House Of the Town</h4>
+                                                        </a>
+                                                        <h6>by: Sale Agent</h6>
+                                                        <span class="price d-flex align-items-center">
+                                                            <img src="img/price-img.png" alt="">
+                                                            $5,600 / month with taxes
+                                                        </span>
+                                                        <span class="details">
+                                                            Details: <em>1750 sq ft</em>
+                                                        </span>
+                                                        <ul class="info">
+                                                            <li>
+                                                                <img src="img/info-01.png" alt="">
+                                                                6 Bathrooms
+                                                            </li>
+                                                            <li>
+                                                                <img src="img/info-02.png" alt="">
+                                                                3 Bathrooms
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#" class="contact">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                            Contact Now
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-12 pe-0">
+                                                    <img src="img/listing-06-09.jpg" class="img-fluid main-img"
+                                                        alt="listing-06-09">
+                                                </div>
+                                                <div class="col-lg-6 col-12 ps-0">
+                                                    <div class="carousel-text w-100 h-100">
+                                                        <ul class="icons d-flex">
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li>(40) Reviews</li>
+                                                        </ul>
+                                                        <a href="#">
+                                                            <h4>6. Amazing Pool Party Villa</h4>
+                                                        </a>
+                                                        <h6>by: Sale Agent</h6>
+                                                        <span class="price d-flex align-items-center">
+                                                            <img src="img/price-img.png" alt="">
+                                                            $3,850 / month with taxes
+                                                        </span>
+                                                        <span class="details">
+                                                            Details: <em>3660 sq ft</em>
+                                                        </span>
+                                                        <ul class="info">
+                                                            <li>
+                                                                <img src="img/info-01.png" alt="">
+                                                                4 Bathrooms
+                                                            </li>
+                                                            <li>
+                                                                <img src="img/info-02.png" alt="">
+                                                                3 Bathrooms
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#" class="contact">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                            Contact Now
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-12 mb-3">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-12 pe-0">
+                                                    <img src="img/listing-05-07.jpg" class="img-fluid main-img"
+                                                        alt="listing-05-07">
+                                                </div>
+                                                <div class="col-lg-6 col-12 ps-0">
+                                                    <div class="carousel-text w-100 h-100">
+                                                        <ul class="icons d-flex">
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li>(24) Reviews</li>
+                                                        </ul>
+                                                        <a href="#">
+                                                            <h4>7. Sunny Apartment</h4>
+                                                        </a>
+                                                        <h6>by: Sale Agent</h6>
+                                                        <span class="price d-flex align-items-center">
+                                                            <img src="img/price-img.png" alt="">
+                                                            $5,450 / month with taxes
+                                                        </span>
+                                                        <span class="details">
+                                                            Details: <em>1640 sq ft</em>
+                                                        </span>
+                                                        <ul class="info">
+                                                            <li>
+                                                                <img src="img/info-01.png" alt="">
+                                                                8 Bathrooms
+                                                            </li>
+                                                            <li>
+                                                                <img src="img/info-02.png" alt="">
+                                                                5 Bathrooms
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#" class="contact">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                            Contact Now
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 mb-3">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-12 pe-0">
+                                                    <img src="img/listing-02-08.jpg" class="img-fluid main-img"
+                                                        alt="listing-02-08">
+                                                </div>
+                                                <div class="col-lg-6 col-12 ps-0">
+                                                    <div class="carousel-text w-100 h-100">
+                                                        <ul class="icons d-flex">
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li>(15) Reviews</li>
+                                                        </ul>
+                                                        <a href="#">
+                                                            <h4>8. Third House of Gaming</h4>
+                                                        </a>
+                                                        <h6>by: Sale Agent</h6>
+                                                        <span class="price d-flex align-items-center">
+                                                            <img src="img/price-img.png" alt="">
+                                                            $5,520 / month with taxes
+                                                        </span>
+                                                        <span class="details">
+                                                            Details: <em>1660 sq ft</em>
+                                                        </span>
+                                                        <ul class="info">
+                                                            <li>
+                                                                <img src="img/info-01.png" alt="">
+                                                                5 Bathrooms
+                                                            </li>
+                                                            <li>
+                                                                <img src="img/info-02.png" alt="">
+                                                                4 Bathrooms
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#" class="contact">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                            Contact Now
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-12 pe-0">
+                                                    <img src="img/listing-06-09.jpg" class="img-fluid main-img"
+                                                        alt="listing-06-09">
+                                                </div>
+                                                <div class="col-lg-6 col-12 ps-0">
+                                                    <div class="carousel-text w-100 h-100">
+                                                        <ul class="icons d-flex">
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li><i class="fa-regular fa-star"></i></li>
+                                                            <li>(20) Reviews</li>
+                                                        </ul>
+                                                        <a href="#">
+                                                            <h4>9. Relaxing BBQ Party Villa</h4>
+                                                        </a>
+                                                        <h6>by: Sale Agent</h6>
+                                                        <span class="price d-flex align-items-center">
+                                                            <img src="img/price-img.png" alt="">
+                                                            $4,760 / month with taxes
+                                                        </span>
+                                                        <span class="details">
+                                                            Details: <em>2880 sq ft</em>
+                                                        </span>
+                                                        <ul class="info">
+                                                            <li>
+                                                                <img src="img/info-01.png" alt="">
+                                                                6 Bathrooms
+                                                            </li>
+                                                            <li>
+                                                                <img src="img/info-02.png" alt="">
+                                                                4 Bathrooms
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#" class="contact">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                            Contact Now
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Listing -->
+    <!-- Start Footer -->
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/black-logo.png" class="mb-5" alt="logo">
+                    <p class="after-logo">If you consider that Plot Listing
+                        template is useful for your website,
+                        please support us a little via PayPal.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Helpful Links</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="d-flex flex-column">
+                                <li><a href="#" class="active">Categories</a></li>
+                                <li><a href="#">Reviews</a></li>
+                                <li><a href="#">Listing</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="d-flex flex-column">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Awards</a></li>
+                                <li><a href="#">Useful Sites</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Contact Us</h4>
+                    <p class="mb-4">27th Street of New Town, Digital Villa</p>
+                    <div class="links">
+                        <div class="row">
+                            <div class="col-lg-6"><a href="#">010-020-0340</a></div>
+                            <div class="col-lg-6"><a href="#">090-080-0760</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="foot text-center">
+                        <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.</p>
+                        <p>Design: <a href="#">TemplateMo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Start Js File -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <Script src="js/all.min.js"></Script>
+</body>
+
+</html>
